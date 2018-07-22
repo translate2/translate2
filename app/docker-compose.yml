@@ -1,0 +1,13 @@
+version: "3"
+services:
+  node:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/translate2/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/translate2/app
+    ports:
+      - "8081:8081"
+    command: "npm start"
