@@ -10,5 +10,5 @@ services:
       - ./:/home/translate2/app
       
     ports:
-      - "8081:8081"
+      - "3000:3000"
     command: "npm start"
