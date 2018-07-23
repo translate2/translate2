@@ -8,6 +8,7 @@ services:
       - NODE_ENV=production
     volumes:
       - ./:/home/translate2/app
+      
     ports:
       - "8081:8081"
     command: "npm start"
